@@ -15,4 +15,12 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\Users\Webiks\Desktop\DotnetCoreUdemy\bulkyProject\Bulky\BulkyWeb\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\Webiks\Desktop\DotnetCoreUdemy\bulkyProject\Bulky\BulkyWeb\.editorconfig" />
+  </ItemGroup>
+
 </Project>

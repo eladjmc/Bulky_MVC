@@ -6,21 +6,23 @@
             <h2 class="text-primary">Create Category</h2>
             <hr/>
         </div>
-        <div class="mb-3">
-            <label>Category Name</label>
-            <input type="text" class="form-control" />
+        <div class="mb-3 row p-1">
+            <label asp-for="Name" class="p-0"></label>
+            <input asp-for="Name" type="text" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
         </div>
-        <div class="mb-3">
-            <label>Display Order</label>
-            <input type="text" class="form-control" />
+        <div class="mb-3 row p-1">
+            <label input asp-for="DisplayOrder" class="p-0"></label>
+            <input asp-for="DisplayOrder" type="number" class="form-control" />
+            <span asp-validation-for="DisplayOrder" class="text-danger"></span>
         </div>
         <div class="row">
-            <div class="col-6">
+            <div class="col-6 col-md-3">
                 <button type="submit" class="btn btn-dark form-control">Create</button>
 
             </div>
-            <div class="col-6">
-                <a asp-controller="Category" asp-action="Index" style="    box-shadow: inset 0px 0px 0px 1px black;" black" class="btn btn-light form-control">Back to List</a>
+            <div class="col-6 col-md-3">
+                <a asp-controller="Category" asp-action="Index" class="btn btn-light border form-control">Back to List</a>
 
             </div>
         </div>
